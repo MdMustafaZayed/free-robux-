@@ -1,0 +1,14 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
+
+client.login('NzgzMTk3MDg5NjM4MzgzNjE2.X8XPIQ.doZGY_T0LGRE8-M2aMjj65UO0YM');
